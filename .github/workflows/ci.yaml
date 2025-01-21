@@ -47,15 +47,6 @@ jobs:
           - odoo_version: "16.0"
             pg_version: "14"
             python_version: "3.10"
-          - odoo_version: "15.0"
-            pg_version: "14"
-            python_version: "3.9"
-          - odoo_version: "14.0"
-            pg_version: "14"
-            python_version: "3.9"
-          - odoo_version: "13.0"
-            pg_version: "14"
-            python_version: "3.9"
     env:
       # Other variables to configure tests and execution environment
       DOCKER_BUILDKIT: 1
@@ -94,12 +85,6 @@ jobs:
             platforms: "linux/amd64,linux/arm64"
           - odoo_version: "16.0"
             platforms: "linux/amd64,linux/arm64"
-          - odoo_version: "15.0"
-            platforms: "linux/amd64,linux/arm64"
-          - odoo_version: "14.0"
-            platforms: "linux/amd64,linux/arm64"
-          - odoo_version: "13.0"
-            platforms: "linux/amd64"
     env:
       # Indicates what's the equivalent to kencove/doodba:latest image
       LATEST_RELEASE: "18.0"
